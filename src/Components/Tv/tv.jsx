@@ -3,9 +3,6 @@ import  {tv_dummy}  from '../tvDummy';
 
 function Tv() {
 
-    const getImageUrl = (path, size = 500) => {
-        return `https://image.tmdb.org/t/p/w${size}${path}`;
-    }
     
   return (
     <div>
@@ -16,7 +13,7 @@ function Tv() {
                     return(
                         <div key={index}>
                             <h3>{item.name}</h3>
-                            <img src = {getImageUrl(item.poster_path)}></img>
+                            <img src="your-image-source" alt="some meaningful description or empty string" />
                             <p>{item.vote_average}</p>
                             <p>{item.overview}</p>
                         </div>
